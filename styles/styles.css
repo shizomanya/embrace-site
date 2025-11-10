@@ -5,7 +5,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "General Sans";
   src: url(../fonts/GeneralSans-Medium.woff2) format("woff2");
@@ -13,7 +12,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "General Sans";
   src: url(../fonts/GeneralSans-Semibold.woff2) format("woff2");
@@ -21,7 +19,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: "Helvetica";
   src: url(../fonts/Helvetica-Bold.woff2) format("woff2");
@@ -30,63 +27,185 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'General Sans', 'Helvetica', sans-serif;
   overflow-x: hidden;
+  color: #000;
+  margin: 0;
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #3461ff;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3461ff;
+}
+
+header {
+  grid-area: header;
+  border-bottom: 1px solid #0000001a;
+}
+
+.container {
+	max-width: 1198px;
+	margin: 0 auto;
 }
 
 .header__inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  column-gap: 40px;
-  padding-inline: 120px;
-  padding-block: 18px;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.header__logo {
+  display: inline-flex;
+  align-items: center;
 }
 
 .header__menu {
-  padding-block: 15px;
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
 .header__menu-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 16px;
+}
+
+.header__menu-item {
+	margin-right: 40px;
+	font-weight: 500;
 }
 
 .header__menu-link {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  height: 48px;
-  text-decoration: none;
-  font-weight: 500;
   color: #000;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
 }
 
 .header__menu-link:hover {
-  color: #2749d8;
+  color: #3461ff;
 }
 
 .header__button {
-  width: 133px;
-  height: 52px;
-  padding: 0 24px;
-  background-color: #3461FF;
+  padding: 16px 24px;
+  background-color: #3461ff;
   color: #fff;
+  border-radius: 70px;
   border: none;
-  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.2s ease-in;
 }
 
 .header__button:hover {
-  background-color: #2749d8;
+  background-color: #1843df;
+}
+
+.section {
+  padding-top: 84px;
+  padding-bottom: 122px;
+  padding-inline: 121px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.hero__body {
+	align-self: center;
+	display: grid;
+  max-width: 518px;
+}
+
+.hero__title {
+  font-size: 96px;
+  font-weight: 600;
+  letter-spacing: -4px;
+  line-height: 98.5px;
+  margin-bottom: 28px;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 44px;
+}
+
+.hero__sign-in {
+  display: flex;
+  height: 64px;
+  gap: 12px;
+}
+
+.hero__input {
+  width: 339px;
+  padding: 20px 18px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fafafa;
+  border-radius: 37px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__input::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #aaaaaa;
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 146px;
+  padding: 20px 24px;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  background-color: #3461ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.hero__button:hover {
+  background-color: #1843df;
+}
+
+.hero__image {
+  max-width: 100%;
+  height: auto;
 }
