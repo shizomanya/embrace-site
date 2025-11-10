@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "General Sans";
+  src: url(../fonts/GeneralSans-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url(../fonts/GeneralSans-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url(../fonts/GeneralSans-Semibold.woff2) format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url(../fonts/Helvetica-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'General Sans', 'Helvetica', sans-serif;
+  overflow-x: hidden;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 40px;
+  padding-inline: 120px;
+  padding-block: 18px;
+}
+
+.header__menu {
+  padding-block: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.header__menu-link:hover {
+  color: #2749d8;
+}
+
+.header__button {
+  width: 133px;
+  height: 52px;
+  padding: 0 24px;
+  background-color: #3461FF;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.header__button:hover {
+  background-color: #2749d8;
+}
