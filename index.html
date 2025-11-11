@@ -4,82 +4,120 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, initial-scale=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" /> -->
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Embrace</title>
   </head>
+
   <body>
     <header class="header">
       <div class="header__inner container">
-        <a href="" class="header__logo logo">
+        <a href="#" class="header__logo logo" aria-label="Embrace homepage">
           <img
             src="./images/logo.svg"
-            alt="Embrace"
+            alt="Embrace Logo"
             class="logo__image"
             width="144"
             height="32"
-            loading="lazy"
           />
         </a>
-        <nav class="header__menu">
+        <nav class="header__menu" aria-label="Main navigation">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a href="/" class="header__menu-link">How It Works</a>
+              <a href="#how-it-works" class="header__menu-link">How It Works</a>
             </li>
             <li class="header__menu-item">
-              <a href="/" class="header__menu-link">Our Work</a>
+              <a href="#our-work" class="header__menu-link">Our Work</a>
             </li>
             <li class="header__menu-item">
-              <a href="/" class="header__menu-link">Pricing</a>
+              <a href="#pricing" class="header__menu-link">Pricing</a>
             </li>
             <li class="header__menu-item">
-              <a href="/" class="header__menu-link">About Us</a>
+              <a href="#about" class="header__menu-link">About Us</a>
             </li>
           </ul>
         </nav>
         <button class="header__button button" type="button">Book A Call</button>
       </div>
     </header>
+
     <main class="content">
-      <section class="section">
-        <div class="section__body container">
-          <div class="hero">
-            <div class="hero__main">
-              <div class="hero__body">
-                <h1 class="hero__title">We Take Care Of Your Brand</h1>
-                <div class="hero__description">
-                  <p>We care about our work and we care about our clients.</p>
-                </div>
-                <form class="hero__sign-in" action="#" method="post">
-                  <input
-                    id="subscribe-email"
-                    name="email"
-                    class="hero__input"
-                    placeholder="Enter Your Email"
-                    type="email"
-                    required
-                  />
-                  <button class="hero__button button" type="submit">
-                    Let's Talk
-                  </button>
-                </form>
-              </div>
-              <img
-                src="./images/hero-bg.png"
-                alt=""
-                role="presentation"
-                class="hero__image"
-                loading="lazy"
-              />
+      <section class="section hero">
+        <div class="hero__main container">
+          <div class="hero__body">
+            <h1 class="hero__title">We Take Care Of Your Brand</h1>
+            <div class="hero__description">
+              <p>We care about our work and we care about our clients.</p>
             </div>
-            <div class="hero__partners"></div>
+            <form class="hero__sign-in" action="#" method="post">
+              <label class="visually-hidden" for="subscribe-email">Email</label>
+              <input
+                id="subscribe-email"
+                name="email"
+                class="hero__input"
+                placeholder="Enter Your Email"
+                type="email"
+                required
+              />
+              <button class="hero__button button" type="submit">
+                Let's Talk
+              </button>
+            </form>
           </div>
+          <img
+            src="./images/hero-bg.png"
+            alt="Illustration of a person managing brand growth"
+            class="hero__image"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="hero__partners">
+        <div class="hero__partners-inner container">
+          <h2 class="hero__partners-title">Companies We Work With</h2>
+          <ul class="hero__partners-list">
+            <li class="hero__partners-item">
+              <img src="./images/icons/1.svg" alt="Spotify" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/2.svg" alt="Google" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/3.svg" alt="Uber" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/4.svg" alt="Microsoft" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/5.svg" alt="Shopify" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/6.svg" alt="Evernote" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/7.svg" alt="Adobe" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/8.svg" alt="PayPal" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/9.svg" alt="Amazon" loading="lazy" />
+            </li>
+            <li class="hero__partners-item">
+              <img src="./images/icons/10.svg" alt="Asana" loading="lazy" />
+            </li>
+          </ul>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">© 2025 shizomanya</p>
+      </div>
+    </footer>
   </body>
 </html>
