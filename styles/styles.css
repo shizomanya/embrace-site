@@ -369,7 +369,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .projects {
-  padding-top: 122px;
+  padding-block: 122px;
+  
 }
 
 .projects__container {
@@ -427,4 +428,62 @@ body::-webkit-scrollbar-thumb {
 
 .projects__button:hover {
   background-color: #1843df;
+}
+
+.banner {
+  position: relative;
+  padding: 100px 60px;
+  background-image: url("../images/banner.svg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 102px;
+}
+
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 193px;
+}
+
+.banner__cta {
+  max-width: 485px;
+}
+
+.banner__title {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 87px;
+  letter-spacing: -1px;
+}
+
+.banner__description {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.banner__button {
+  background-color: #fff;
+  color: #111;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 64px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.banner__button:hover {
+  background-color: #e0e0e0;
 }
