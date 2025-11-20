@@ -11,58 +11,64 @@
   <body>
     <header class="header">
       <div class="header__inner container">
-        <a href="#" class="header__logo logo" aria-label="Embrace homepage">
+        <a href="#" class="header__brand" aria-label="Embrace homepage">
           <img
             src="./images/logo.svg"
             alt="Embrace Logo"
-            class="logo__image"
+            class="header__brand-img"
             width="144"
             height="32"
           />
         </a>
-        <nav class="header__menu" aria-label="Main navigation">
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="#how-it-works" class="header__menu-link">How It Works</a>
+
+        <nav class="header__nav" aria-label="Main navigation">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#how-it-works" class="header__nav-link">How It Works</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#our-work" class="header__menu-link">Our Work</a>
+            <li class="header__nav-item">
+              <a href="#our-work" class="header__nav-link">Our Work</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#pricing" class="header__menu-link">Pricing</a>
+            <li class="header__nav-item">
+              <a href="#pricing" class="header__nav-link">Pricing</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#about" class="header__menu-link">About Us</a>
+            <li class="header__nav-item">
+              <a href="#about" class="header__nav-link">About Us</a>
             </li>
           </ul>
         </nav>
-        <button class="header__button button" type="button">Book A Call</button>
+
+        <button class="header__action button" type="button">Book A Call</button>
       </div>
     </header>
 
-    <main class="content">
-      <section class="section hero">
-        <div class="hero__main container">
-          <div class="hero__body">
+    <main class="page">
+      <section class="hero section">
+        <div class="hero__inner container">
+          <div class="hero__content">
             <h1 class="hero__title">We Take Care Of Your Brand</h1>
-            <div class="hero__description">
+            <div class="hero__lead">
               <p>We care about our work and we care about our clients.</p>
             </div>
-            <form class="hero__sign-in" action="#" method="post">
-              <label class="visually-hidden" for="subscribe-email">Email</label>
+
+            <form class="hero__form" action="#" method="post">
+              <label class="visually-hidden" for="subscribe-email-hero"
+                >Email</label
+              >
               <input
-                id="subscribe-email"
+                id="subscribe-email-hero"
                 name="email"
                 class="hero__input"
                 placeholder="Enter Your Email"
                 type="email"
                 required
               />
-              <button class="hero__button button" type="submit">
+              <button class="hero__submit button" type="submit">
                 Let's Talk
               </button>
             </form>
           </div>
+
           <img
             src="./images/hero-bg.png"
             alt="Illustration of a person managing brand growth"
@@ -72,80 +78,78 @@
         </div>
       </section>
 
-      <section class="hero__partners">
-        <div class="hero__partners-inner container">
-          <h2 class="hero__partners-title">Companies We Work With</h2>
-          <ul class="hero__partners-list">
-            <li class="hero__partners-item">
+      <section class="partners">
+        <div class="partners__inner container">
+          <h2 class="partners__title">Companies We Work With</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
               <img src="./images/icons/1.svg" alt="Spotify" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/2.svg" alt="Google" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/3.svg" alt="Uber" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/4.svg" alt="Microsoft" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/5.svg" alt="Shopify" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/6.svg" alt="Evernote" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/7.svg" alt="Adobe" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/8.svg" alt="PayPal" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/9.svg" alt="Amazon" loading="lazy" />
             </li>
-            <li class="hero__partners-item">
+            <li class="partners__item">
               <img src="./images/icons/10.svg" alt="Asana" loading="lazy" />
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="section commitments">
-        <div class="commitments__main container">
-          <ul class="commitments__numbers">
-            <li class="commitments__number">
-              <h3 class="commitments__number-title">245%</h3>
-              <p class="commitments__number-description">
-                More revenues for the brand
-              </p>
+      <section class="stats section">
+        <div class="stats__inner container">
+          <ul class="stats__list">
+            <li class="stats__item">
+              <h3 class="stats__value">245%</h3>
+              <p class="stats__label">More revenues for the brand</p>
             </li>
-            <li class="commitments__number">
-              <h3 class="commitments__number-title">130K+</h3>
-              <p class="commitments__number-description">Audiences reached</p>
+            <li class="stats__item">
+              <h3 class="stats__value">130K+</h3>
+              <p class="stats__label">Audiences reached</p>
             </li>
-            <li class="commitments__number">
-              <h3 class="commitments__number-title">50+</h3>
-              <p class="commitments__number-description">Brands trust us</p>
+            <li class="stats__item">
+              <h3 class="stats__value">50+</h3>
+              <p class="stats__label">Brands trust us</p>
             </li>
-            <li class="commitments__number">
-              <h3 class="commitments__number-title">24+</h3>
-              <p class="commitments__number-description">Worldwide Awards</p>
+            <li class="stats__item">
+              <h3 class="stats__value">24+</h3>
+              <p class="stats__label">Worldwide Awards</p>
             </li>
           </ul>
 
-          <div class="commitments__body">
-            <h2 class="commitments__title">Commitments</h2>
-            <div class="commitments__description">
+          <div class="stats__body">
+            <h2 class="stats__title">Commitments</h2>
+            <div class="stats__description">
               <p>
                 We are committed to working with you collaboratively to
                 understand your goals and create a strategy that will achieve
                 them.
               </p>
             </div>
-            <a class="commitments__button-link" href="#">
+            <a class="stats__link" href="#">
               Learn More
               <img
-                class="commitments__button-img"
+                class="stats__link-icon"
                 src="./images/icons/arrow-right.svg"
                 alt=""
               />
@@ -155,11 +159,11 @@
       </section>
     </main>
 
-    <section class="section how-it-works">
-      <div class="container how-it-works__container">
-        <div class="how-it-works__content">
-          <h2 class="how-it-works__title">How It Works</h2>
-          <p class="how-it-works__text">
+    <section id="how-it-works" class="process section">
+      <div class="process__inner container">
+        <div class="process__info">
+          <h2 class="process__title">How It Works</h2>
+          <p class="process__text">
             We believe that the best way to create successful marketing
             campaigns is to work closely with our clients to understand their
             goals and challenges.
@@ -167,69 +171,69 @@
           <img
             src="./images/how-it-work-bg.png"
             alt="How it works background illustration"
-            class="how-it-works__image"
+            class="process__image"
             width="487"
             height="311"
             loading="lazy"
           />
         </div>
 
-        <div class="how-it-works__main">
-          <ul class="how-it-works__list">
-            <li class="how-it-works__item">
+        <div class="process__steps">
+          <ul class="process__list">
+            <li class="process__step">
               <img
                 src="./images/icons/discovery.svg"
                 alt=""
-                class="how-it-works__icon"
+                class="process__icon"
               />
-              <div class="how-it-works__info">
-                <h3 class="how-it-works__subtitle">Discovery</h3>
-                <p class="how-it-works__description">
+              <div class="process__step-body">
+                <h3 class="process__step-title">Discovery</h3>
+                <p class="process__step-text">
                   We meet with you to learn about your business, your goals, and
                   your target audience.
                 </p>
               </div>
             </li>
 
-            <li class="how-it-works__item">
+            <li class="process__step">
               <img
                 src="./images/icons/strategy.svg"
                 alt=""
-                class="how-it-works__icon"
+                class="process__icon"
               />
-              <div class="how-it-works__info">
-                <h3 class="how-it-works__subtitle">Strategy</h3>
-                <p class="how-it-works__description">
+              <div class="process__step-body">
+                <h3 class="process__step-title">Strategy</h3>
+                <p class="process__step-text">
                   We develop a customized marketing strategy that is based on
                   your unique needs and goals.
                 </p>
               </div>
             </li>
 
-            <li class="how-it-works__item">
+            <li class="process__step">
               <img
                 src="./images/icons/execution.svg"
                 alt=""
-                class="how-it-works__icon"
+                class="process__icon"
               />
-              <div class="how-it-works__info">
-                <h3 class="how-it-works__subtitle">Execution</h3>
-                <p class="how-it-works__description">
+              <div class="process__step-body">
+                <h3 class="process__step-title">Execution</h3>
+                <p class="process__step-text">
                   We execute our strategy using the latest digital marketing
                   tools and techniques.
                 </p>
               </div>
             </li>
 
-            <li class="how-it-works__item">
+            <li class="process__step">
               <img
                 src="./images/icons/measurement.svg"
                 alt=""
-                class="how-it-works__icon"
+                class="process__icon"
               />
-              <div class="how-it-works__info">
-                <h3 class="how-it-works__subtitle">Measurement</h3>
-                <p class="how-it-works__description">
+              <div class="process__step-body">
+                <h3 class="process__step-title">Measurement</h3>
+                <p class="process__step-text">
                   We track the results of our campaigns so that we can make
                   adjustments as needed.
                 </p>
@@ -240,36 +244,36 @@
       </div>
     </section>
 
-    <section class="projects section">
-      <div class="projects__container container">
+    <section id="our-work" class="projects section">
+      <div class="projects__inner container">
         <div class="projects__header">
-          <h2 class="projects__header-title">Our Work</h2>
-          <p class="projects__header-text">A glimpse of our portfolio</p>
+          <h2 class="projects__title">Our Work</h2>
+          <p class="projects__lead">A glimpse of our portfolio</p>
         </div>
-        <div class="projects__works">
-          <ul class="projects__list">
-            <li class="projects__item">
-              <img src="./images/projects/1.png" alt="" class="projects__img" />
-              <p class="projects__title">Apple</p>
-            </li>
-            <li class="projects__item">
-              <img src="./images/projects/2.png" alt="" class="projects__img" />
-              <p class="projects__title">Coca-Cola</p>
-            </li>
-            <li class="projects__item">
-              <img src="./images/projects/3.png" alt="" class="projects__img" />
-              <p class="projects__title">Nike</p>
-            </li>
-          </ul>
-        </div>
-        <button class="projects__button button" type="button">See More</button>
+
+        <ul class="projects__list">
+          <li class="projects__item">
+            <img src="./images/projects/1.png" alt="" class="projects__img" />
+            <p class="projects__name">Apple</p>
+          </li>
+          <li class="projects__item">
+            <img src="./images/projects/2.png" alt="" class="projects__img" />
+            <p class="projects__name">Coca-Cola</p>
+          </li>
+          <li class="projects__item">
+            <img src="./images/projects/3.png" alt="" class="projects__img" />
+            <p class="projects__name">Nike</p>
+          </li>
+        </ul>
+
+        <button class="projects__more button" type="button">See More</button>
       </div>
     </section>
 
-    <section class="banner section container">
-      <div class="banner__container">
+    <section class="banner section">
+      <div class="banner__inner container">
         <div class="banner__content">
-          <div class="banner__text">
+          <div class="banner__lead">
             <h2 class="banner__title">Elevate Your Brand Today!</h2>
           </div>
           <div class="banner__cta">
@@ -277,71 +281,73 @@
               Ready to transform your digital presence? Let’s create magic
               together! Book our services now!
             </p>
-            <button class="banner__button" type="button">Book Call</button>
+            <button class="banner__button button" type="button">
+              Book Call
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="team container">
-      <div class="team__container">
-        <div class="team__main">
+    <section class="team section">
+      <div class="team__inner container">
+        <div class="team__gallery">
           <ul class="team__list">
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/1.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
               />
             </li>
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/2.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
               />
             </li>
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/3.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
               />
             </li>
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/4.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
               />
             </li>
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/5.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
               />
             </li>
-            <li class="team__item">
+            <li class="team__member">
               <img
                 src="./images/team/6.svg"
                 alt=""
-                class="team__icon"
+                class="team__avatar"
                 width="190"
                 height="190"
                 loading="lazy"
@@ -349,25 +355,29 @@
             </li>
           </ul>
         </div>
-        <div class="team__content">
+
+        <div class="team__info">
           <h2 class="team__title">Meet Our Team</h2>
           <p class="team__text">
             Discover the brilliance behind Embrace. Our team blends innovation
             and artistry to craft digital wonders that captivate
           </p>
-          <button class="projects__button button" type="button">
-            Learn More
-          </button>
+          <button class="team__more button" type="button">Learn More</button>
         </div>
       </div>
     </section>
 
-    <section class="slider container">
-      <div class="slider__container">
-        <header class="slider__header">
-          <h2 class="slider__title">What Our Client Said About Us</h2>
-          <div class="slider__controls">
-            <button class="slider__arrow-button button-left" type="button">
+    <section class="testimonials section">
+      <div class="testimonials__inner container">
+        <header class="testimonials__header">
+          <h2 class="testimonials__title">What Our Client Said About Us</h2>
+          <div class="testimonials__controls">
+            <button
+              class="testimonials__arrow testimonials__arrow--left"
+              type="button"
+              aria-label="Previous"
+            >
+              <!-- left svg -->
               <svg
                 width="23"
                 height="23"
@@ -382,7 +392,12 @@
                 />
               </svg>
             </button>
-            <button class="slider__arrow-button button-right" type="button">
+
+            <button
+              class="testimonials__arrow testimonials__arrow--right"
+              type="button"
+              aria-label="Next"
+            >
               <span class="visually-hidden">Fifth slide</span>
               <svg
                 width="23"
@@ -399,22 +414,23 @@
             </button>
           </div>
         </header>
-        <div class="slider__body">
-          <ul class="slider-list">
-            <li class="slider-item">
-              <blockquote class="slider-card">
-                <header class="slider-card__header">
+
+        <div class="testimonials__track">
+          <ul class="testimonials__list">
+            <li class="testimonials__item">
+              <blockquote class="testimonial-card">
+                <header class="testimonial-card__header">
                   <img
                     src="./images/slider/1.svg"
                     alt=""
-                    class="slider-card__img"
+                    class="testimonial-card__img"
                   />
-                  <div class="slider-client-name">
-                    <cite class="slider-card__name">Amelia Joseph</cite>
-                    <cite class="slider-card__position">Chief Manager</cite>
+                  <div class="testimonial-card__meta">
+                    <cite class="testimonial-card__name">Amelia Joseph</cite>
+                    <cite class="testimonial-card__role">Chief Manager</cite>
                   </div>
                 </header>
-                <div class="slider-card__body">
+                <div class="testimonial-card__body">
                   <p>
                     My vision came alive effortlessly. Their blend of casual and
                     professional approach made the process a breeze. Creativity
@@ -423,20 +439,21 @@
                 </div>
               </blockquote>
             </li>
-            <li class="slider-item">
-              <blockquote class="slider-card">
-                <header class="slider-card__header">
+
+            <li class="testimonials__item">
+              <blockquote class="testimonial-card">
+                <header class="testimonial-card__header">
                   <img
                     src="./images/slider/2.svg"
                     alt=""
-                    class="slider-card__img"
+                    class="testimonial-card__img"
                   />
-                  <div class="slider-client-name">
-                    <cite class="slider-card__name">Amelia Joseph</cite>
-                    <cite class="slider-card__position">Chief Manager</cite>
+                  <div class="testimonial-card__meta">
+                    <cite class="testimonial-card__name">Amelia Joseph</cite>
+                    <cite class="testimonial-card__role">Chief Manager</cite>
                   </div>
                 </header>
-                <div class="slider-card__body">
+                <div class="testimonial-card__body">
                   <p>
                     My vision came alive effortlessly. Their blend of casual and
                     professional approach made the process a breeze. Creativity
@@ -445,20 +462,21 @@
                 </div>
               </blockquote>
             </li>
-            <li class="slider-item">
-              <blockquote class="slider-card">
-                <header class="slider-card__header">
+
+            <li class="testimonials__item">
+              <blockquote class="testimonial-card">
+                <header class="testimonial-card__header">
                   <img
                     src="./images/slider/3.svg"
                     alt=""
-                    class="slider-card__img"
+                    class="testimonial-card__img"
                   />
-                  <div class="slider-client-name">
-                    <cite class="slider-card__name">Amelia Joseph</cite>
-                    <cite class="slider-card__position">Chief Manager</cite>
+                  <div class="testimonial-card__meta">
+                    <cite class="testimonial-card__name">Amelia Joseph</cite>
+                    <cite class="testimonial-card__role">Chief Manager</cite>
                   </div>
                 </header>
-                <div class="slider-card__body">
+                <div class="testimonial-card__body">
                   <p>
                     My vision came alive effortlessly. Their blend of casual and
                     professional approach made the process a breeze. Creativity
@@ -472,19 +490,19 @@
       </div>
     </section>
 
-    <section class="banner-start section container">
-      <div class="banner-start__container">
-        <div class="banner-start__content">
-          <div class="banner-start__body">
-            <h2 class="banner-start__title">Start Your Journey With Us Now</h2>
-            <button class="banner-start__button" type="button">
+    <section class="cta-start section">
+      <div class="cta-start__inner container">
+        <div class="cta-start__content">
+          <div class="cta-start__body">
+            <h2 class="cta-start__title">Start Your Journey With Us Now</h2>
+            <button class="cta-start__button button" type="button">
               Start Now
             </button>
           </div>
           <img
             src="./images/banner-start.svg"
             alt=""
-            class="banner-start__img"
+            class="cta-start__image"
             width="352"
             height="352"
           />
@@ -492,87 +510,84 @@
       </div>
     </section>
 
-    <section class="help section container">
-      <div class="help__container">
-        <div class="help__content">
-          <div class="help__body">
-            <ul class="help__list">
-              <li class="help__item">
-                <details class="help__accordion">
-                  <summary class="help__accordion-header">
-                    <h3 class="help__accordion-title">
-                      How do i sign up for the project?
-                    </h3>
-                    <span class="help__accordion-indicator"></span>
-                  </summary>
-                  <div class="help__accordion-body">
-                    <p>description</p>
-                  </div>
-                </details>
-              </li>
+    <section class="faq section">
+      <div class="faq__inner container">
+        <div class="faq__body">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <details class="faq__accordion">
+                <summary class="faq__question">
+                  <h3 class="faq__question-title">
+                    How do i sign up for the project?
+                  </h3>
+                  <span class="faq__indicator"></span>
+                </summary>
+                <div class="faq__answer">
+                  <p>description</p>
+                </div>
+              </details>
+            </li>
 
-              <li class="help__item">
-                <details class="help__accordion">
-                  <summary class="help__accordion-header">
-                    <h3 class="help__accordion-title">
-                      What thing that i should prepare before starting?
-                    </h3>
-                    <span class="help__accordion-indicator"></span>
-                  </summary>
-                  <div class="help__accordion-body">
-                    <p>description</p>
-                  </div>
-                </details>
-              </li>
+            <li class="faq__item">
+              <details class="faq__accordion">
+                <summary class="faq__question">
+                  <h3 class="faq__question-title">
+                    What thing that i should prepare before starting?
+                  </h3>
+                  <span class="faq__indicator"></span>
+                </summary>
+                <div class="faq__answer"><p>description</p></div>
+              </details>
+            </li>
 
-              <li class="help__item">
-                <details class="help__accordion">
-                  <summary class="help__accordion-header">
-                    <h3 class="help__accordion-title">
-                      Does my company need help for marketing advices?
-                    </h3>
-                    <span class="help__accordion-indicator"></span>
-                  </summary>
-                  <div class="help__accordion-body">
-                    <p>description</p>
-                  </div>
-                </details>
-              </li>
-            </ul>
-            <div class="help-info">
-              <h2 class="help__title">How We Can Help You?</h2>
-              <div class="help__description">
-                <p>
-                  Follow our newsletter. We will regulary update our latest
-                  project and availability.
-                </p>
-              </div>
-              <form class="help__sign-in" action="#" method="post">
-                <label class="visually-hidden" for="subscribe-email">
-                  Email
-                </label>
-                <input
-                  id="subscribe-email"
-                  name="email"
-                  class="help__input"
-                  placeholder="Enter Your Email"
-                  type="email"
-                  required
-                />
-                <button class="help__button button" type="submit">
-                  Let's Talk
-                </button>
-              </form>
-              <a class="help__button-link" href="#">
-                More FAQ
-                <img
-                  class="commitments__button-img"
-                  src="./images/icons/arrow-right.svg"
-                  alt=""
-                />
-              </a>
+            <li class="faq__item">
+              <details class="faq__accordion">
+                <summary class="faq__question">
+                  <h3 class="faq__question-title">
+                    Does my company need help for marketing advices?
+                  </h3>
+                  <span class="faq__indicator"></span>
+                </summary>
+                <div class="faq__answer"><p>description</p></div>
+              </details>
+            </li>
+          </ul>
+
+          <aside class="faq__aside">
+            <h2 class="faq__title">How We Can Help You?</h2>
+            <div class="faq__lead">
+              <p>
+                Follow our newsletter. We will regulary update our latest
+                project and availability.
+              </p>
             </div>
-          </div>
+
+            <form class="faq__form" action="#" method="post">
+              <label class="visually-hidden" for="subscribe-email-faq"
+                >Email</label
+              >
+              <input
+                id="subscribe-email-faq"
+                name="email"
+                class="faq__input"
+                placeholder="Enter Your Email"
+                type="email"
+                required
+              />
+              <button class="faq__submit button" type="submit">
+                Let's Talk
+              </button>
+            </form>
+
+            <a class="faq__more" href="#">
+              More FAQ
+              <img
+                class="faq__more-icon"
+                src="./images/icons/arrow-right.svg"
+                alt=""
+              />
+            </a>
+          </aside>
         </div>
       </div>
     </section>
@@ -581,8 +596,8 @@
       <section class="footer__contacts">
         <div class="container">
           <div class="footer__inner">
-            <div class="footer__socials-block">
-              <a href="#!" class="footer__logo">
+            <div class="footer__brand">
+              <a href="#!" class="footer__logo-link">
                 <img
                   src="./images/logo.svg"
                   alt="Logo"
@@ -603,7 +618,7 @@
                 </a>
               </div>
 
-              <a href="#!" class="footer__btn">Contact Us</a>
+              <a href="#!" class="footer__contact button">Contact Us</a>
             </div>
 
             <div class="footer__links">
@@ -656,13 +671,13 @@
         </div>
       </section>
 
-      <section class="footer-end">
+      <section class="footer__end">
         <div class="container">
-          <div class="footer-end__inner">
-            <p class="footer-end__copyright">© 2025 shizomanya</p>
-            <div class="footer-end__links">
-              <a href="#!" class="footer-end__link">Terms of use</a>
-              <a href="#!" class="footer-end__link">Privacy policy</a>
+          <div class="footer__end-inner">
+            <p class="footer__copyright">© 2025 shizomanya</p>
+            <div class="footer__end-links">
+              <a href="#!" class="footer__end-link">Terms of use</a>
+              <a href="#!" class="footer__end-link">Privacy policy</a>
             </div>
           </div>
         </div>
